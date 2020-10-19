@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class AestroidMove : MonoBehaviour
 {
+
+    private GameManager manager;
     // Start is called before the first frame update
     void Start()
     {
-        
+        manager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -23,7 +25,13 @@ public class AestroidMove : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("hiiii");
+        if(collision.gameObject.tag == "Player")
+        {
+            //variable health stuff
+            manager.DescreseHealth();
+
+        }
+        
         Destroy(this.gameObject);
     }
 
