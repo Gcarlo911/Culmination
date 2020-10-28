@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 7505384325405981158}
   - component: {fileID: 7505384325405981162}
   - component: {fileID: 1874768651408157903}
-  m_Layer: 0
-  m_Name: Asteroid 1
-  m_TagString: Untagged
+  m_Layer: 9
+  m_Name: Asteroid
+  m_TagString: Asteroid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46,6 +46,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c35a47cea1db22e44a15956930ed6a31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyType: 1
+  speed: 5
+  rotation: 100
+  damage: 20
 --- !u!50 &7505384325405981158
 Rigidbody2D:
   serializedVersion: 4
