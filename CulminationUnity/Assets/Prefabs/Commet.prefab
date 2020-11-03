@@ -49,7 +49,7 @@ MonoBehaviour:
   enemyType: 2
   speed: 8
   rotation: 0
-  damage: 35
+  damage: 40
 --- !u!50 &3480161232670102989
 Rigidbody2D:
   serializedVersion: 4
